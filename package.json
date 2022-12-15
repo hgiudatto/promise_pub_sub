@@ -2,10 +2,16 @@
   "name": "promise_pub_sub",
   "version": "1.0.0",
   "description": "Promises, async_await, publisher-subscriber",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/promises_async_await_subscriber.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/promises_async_await_executor.js",
+    "dev": "nodemon promises_async_await_subscriber.js"
   },
   "author": "hgiudatto",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "nodemon": "^2.0.20"
+  }
 }
